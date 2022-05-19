@@ -1,0 +1,265 @@
+
+/* Add your styles here. Take it piece by piece! */
+/* Variables and Imports */
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+body {
+  overflow-x: hidden;
+  background-color: var(--accent);
+}
+
+html {
+  --bright: #d231a0;
+  --accent: skyblue;
+  --body: #f3fffc;
+  --white: white;
+  --black: black;
+  --charcoal: #111111;
+  --basalt: #262626;
+  --ash: #555555;
+  --pumice: #cacaca;
+}
+
+/* Global Styles */
+
+a {
+  color: var(--charcoal);
+  text-decoration: none;
+  color: var(--charcoal);
+}
+
+a:hover {
+  color: var(--bright);
+}
+
+/* Header Styles */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.masthead-branding {
+  display: flex;
+  flex-direction: column;
+}
+.masthead-branding-logo {
+  font-size: 3.5rem;
+  font-family: "Tapestry", cursive;
+  text-decoration: none;
+  color: var(--bright);
+  font-weight: bold;
+}
+
+.masthead-branding-tagline {
+  font-size: 1.5rem;
+  font-family: "Radio Canada", sans-serif;
+}
+
+.masthead-categories-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  list-style-type: none;
+  margin: 0 1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "Merriweather", serif;
+  word-spacing: 5px;
+}
+
+/* Blackouts Big-Story Styles */
+.big-story {
+  margin: 2em 0 0 0;
+}
+
+.big-story .bs {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5em;
+}
+
+.bs-img {
+  order: 2;
+}
+
+.bs-story {
+  margin: 0 5em 0 0;
+}
+
+.bs-rubric {
+  font-size: medium;
+  font-family: "Tapestry", cursive;
+  text-transform: uppercase;
+  color: var(--bright);
+  letter-spacing: 3px;
+}
+
+.bs-hed {
+  font-size: 2rem;
+  text-align: left;
+  font-family: "Tapestry", cursive;
+}
+
+.bs-dek {
+  font-size: 1.5rem;
+  font-family: "Radio Canada", sans-serif;
+  font-weight: bold;
+}
+
+.bs-byline {
+  font-size: 1.1rem;
+  font-family: "Tapestry", cursive;
+}
+
+/* More on Blackouts Styles */
+
+#big-story-related {
+  display: flex;
+  margin: 5em 5em;
+}
+
+.rs-lab-cont {
+  flex-basis: 50em;
+  font-family: "Tapestry", cursive;
+  letter-spacing: 2px;
+}
+
+.rs-rubric {
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--bright);
+}
+
+#big-story-related article {
+  margin: 0 2em;
+}
+
+.headline {
+  font-family: "Merriweather", serif;
+  word-spacing: 5px;
+  line-height: 1.5em;
+}
+
+.rs-cont-byline.byline {
+  font-family: "Tapestry", cursive;
+}
+
+/* REPORTS , 3-MMINUTES-WITH AND FEATURES combined Styles */
+.block.spotlight {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 5em; /* change later */
+}
+
+.spotlight-content.spotlight-content--row {
+  display: flex;
+  width: 70%;
+}
+
+.spotlight-story {
+  flex-basis: 280px;
+  margin: 1em;
+}
+
+.spotlight-header {
+  height: 0em;
+  width: 20em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.spotlight-header-title {
+  font-size: 2rem;
+  font-family: "Tapestry", cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-story img {
+  width: 300px;
+}
+
+.spotlight-story-headline {
+  font-size: medium;
+}
+
+.spotlight-header-subtitle {
+  font-size: 1.3rem;
+  font-family: "Merriweather", serif;
+}
+
+.spotlight-story-headline {
+  font-family: "Merriweather", serif;
+}
+
+.spotlight-story-dek {
+  font-family: "Radio Canada", sans-serif;
+}
+
+.spotlight-story-author.byline {
+  font-family: "Tapestry", cursive;
+  margin: 1em 0 0 0;
+}
+
+/* FEATURES STYLES */
+
+.spotlight-story-dateline a {
+  color: var(--bright);
+  text-transform: uppercase;
+  font-family: "Tapestry", cursive;
+  letter-spacing: 1px;
+}
+
+/* Footer Styles */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bright);
+  padding: 20px 0;
+}
+
+footer .footer-branding-logo {
+  font-family: "Tapestry", cursive;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+footer .footer-menu .menu {
+  display: flex;
+}
+
+footer .footer-menu .menu .menu-item a {
+  font-family: "Merriweather", serif;
+  color: var(--white);
+}
+
+.footer-copyright {
+  font-family: "Merriweather", serif;
+  font-size: 0.7rem;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+
+/* These styles are for the disclaimer -- leave them alone */
+
+.disclaimer {
+  margin: 1em;
+  padding: 4px;
+  border: 10px solid hotpink;
+}
+
+body {
+  margin: 0
+}
